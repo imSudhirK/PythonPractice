@@ -1,0 +1,18 @@
+from z3 import *
+
+p1 = Bool("p1")
+p2 = Bool("p2")
+p3 = Bool("p3')
+
+con = Or(p1, Not(p2), p3)
+dis = And (p1,p2, p3)
+
+s = Solver()
+s.add(con)
+r = s.check()
+if r == sat :
+  m= s.model()
+  print (m)
+else :
+  print ("unsat")
+  
