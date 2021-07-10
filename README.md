@@ -1,2 +1,2 @@
-here I am going to keep my python practice notes 
+here I am going to keep my practice notes 
 which may help me later onwords 
